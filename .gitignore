@@ -1,0 +1,39 @@
+# Environment and sensitive files
+.env
+.env.local
+.env.production
+
+# Database files
+*.sql
+database_setup.sql
+app/Config/Database_production.php
+
+# Logs and temporary files
+error_log
+logs/
+*.log
+writable/logs/*
+writable/debugbar/*
+writable/session/*
+writable/cache/*
+
+# Uploads directory
+writable/uploads/*
+!writable/uploads/.gitkeep
+
+# Third party vendor directories (if you want to exclude them)
+app/ThirdParty/*/vendor/
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*_old.php
+
+# XAMPP/Server specific
+php.ini.local
